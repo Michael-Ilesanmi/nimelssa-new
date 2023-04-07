@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    height: 100%;
+    min-height: 100%;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+.custom__underline_dark, .custom__underline_light{
+    position:relative;
+    width: fit-content;
+}
+.custom__underline_dark::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -5px;
+    width: 45%;
+    height: 3px;
+    background: #090C14;
+}
+.custom__underline_light::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -5px;
+    width: 45%;
+    height: 3px;
+    background: #e5e5e5;
+}
+
+
+.carousel-cell{
+    width: 100%;
+}
