@@ -3,7 +3,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NIMELSSA UI</title>
+    <title>NIMELSSAUI - NIgerian Medical Laboratory Science Students' Association</title>
+    <link rel="shortcut icon" href="/public/img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -21,7 +22,7 @@
                 <img src="/public/img/logo.png" alt="NIMELSSA LOGO" class="h-12" />
                 NIMELSSA UI
             </a>    
-            <ul class="flex justify-around items-center space-x-12 text-sm font-body">
+            <ul class="hidden md:flex justify-around items-center space-x-12 text-sm font-body">
                 <li><a class="hover:text-gray-300 hover:font-bold ease-linear duration-300" href="/">HOME</a></li>
                 <li><a class="hover:text-gray-300 hover:font-bold ease-linear duration-300" href="/#staff">STAFF</a></li>
                 <li><a class="hover:text-gray-300 hover:font-bold ease-linear duration-300" href="/#executives">EXCOS</a></li>
@@ -33,18 +34,18 @@
     <main>
         <div class="bg-no-repeat bg-center bg-cover backdrop-blur-xl">
         <!-- Hero Section -->
-            <div class="container h-screen">
-                <div class="font-body min-h-full h-full grid grid-cols-2 justify-around">
+            <div class="container">
+                <div class="font-body pt-24 min-h-full h-full md:grid grid-cols-2 justify-around">
                     <div 
                         class="h-full flex flex-col justify-center mx-auto space-y-4" 
                         data-aos="fade-right"
                         data-aos-duration="3000"
                     >
-                        <h1 class="font-heading font-medium text-2xl">Welcome to the Nigerian Medical Laboratory Science Students' Association, University of Ibadan Chapter (NIMELSSA UI)</h1>
-                        <p class="font-body font-light text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni maxime amet praesentium.</p>
+                        <h1 class="font-heading font-medium text-2xl md:text-3xl">Welcome to the Nigerian Medical Laboratory Science Students' Association, University of Ibadan Chapter (NIMELSSA UI)</h1>
+                        <p class="font-body font-light text-gray-400 text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni maxime amet praesentium.</p>
                     </div>
                     <div 
-                        class="flex items-center justify-center" 
+                        class="hidden md:flex items-center justify-center" 
                         data-aos="fade-left"
                         data-aos-duration="3000"
                     >
@@ -53,44 +54,40 @@
                 </div>
             </div>   
         <!--Hero Section End  -->
+        <!-- Learn About US  -->
+        <div class="container my-24 font-body grid grid-flow-row md:grid-cols-2 gap-12">
+            <div class="relative w-full grid grid-cols-2 ">
+                <img src="https://picsum.photos/310" alt="" class="" />
+                <img src="https://picsum.photos/310" alt="" class="invisible" />
+                <img src="https://picsum.photos/310" alt="" class="invisible" />
+                <img src="https://picsum.photos/310" alt="" class="" />
+            </div>
+            <div class="text-sm space-y-4">
+                <h2 class="text-[#0f420a] font-heading text-2xl md:text-3xl">Who We Are</h2>
+                <p>
+                    The Nigerian Medical Laboratory Science Students' Association, NIMELSSA  represents all Bio-Medical Laboratory Science Students of the University of Ibadan.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde sunt nulla commodi eaque cupiditate voluptate quas reiciendis quam sit iusto, molestias totam natus culpa laudantium.
+                </p>
+                <button class="border-2 border-solid border-[#0f420a] text-[#0f420a] p-4 text-base hover:text-white hover:bg-[#0f420a] transition ease-linear duration-700">
+                    LEARN MORE
+                </button>
+            </div>
+        </div>
+        <!-- Learn About US  -->
         <!-- Meet The Executives -->
-        <div class="container" id="executives">
-            <h2 class="font-body text-2xl text-center font-bold text-blue-950 my-4">Meet The Executives</h2>
+        <div id="executives">
+            <h2 class="font-heading text-2xl md:text-3xl text-center text-blue-950 my-24">Meet The Executives</h2>
         </div>
         <!-- Flickity HTML init -->
-        <div class="main-carousel bg-blue-400 pt-12 mb-12" data-flickity='{ "wrapAround": true }'>
-            <div class="carousel-cell">
-                <div class="container flex justify-around">
-                    <div class="flex justify-center">
-                        <img src="/public/img/exco_1.png" class="h-96 w-auto" alt="Executive 1" />
-                    </div>
-                    <div class="self-center text-right text-gray-100">
-                        <h3 class="font-body text-2xl">Peters Tobiloba</h3>
-                        <h2 class="font-heading text-lg font-medium text-gray-100">President</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-cell">
-                <div class="container flex justify-around">
-                    <div class="flex justify-center">
-                        <img src="/public/img/exco_1.png" class="h-96 w-auto" alt="Executive 1" />
-                    </div>
-                    <div class="self-center text-right text-gray-100">
-                        <h3 class="font-body text-2xl">Seun XYZ</h3>
-                        <h2 class="font-heading text-lg font-medium text-gray-100">Vice President</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-cell">
-                <div class="container flex justify-around">
-                    <div class="flex justify-center">
-                        <img src="/public/img/exco_1.png" class="h-96 w-auto" alt="Executive 1" />
-                    </div>
-                    <div class="self-center text-right text-gray-100">
-                        <h3 class="font-body text-2xl">Marvelous Zoom</h3>
-                        <h2 class="font-heading text-lg font-medium text-gray-100">General Secretary</h2>
-                    </div>
-                </div>
+        <div class="bg-blue-400 pt-12 mb-12 w-full">
+            <div 
+                id="executive_carousel" 
+                class="main-carousel" 
+                data-flickity='{ "wrapAround": true }'
+            >
+                <!-- The Executive Carousel is injected using JavaScript in /src/js/executives.js -->
             </div>
         </div>
         <!-- Meet The Executives -->
@@ -98,7 +95,7 @@
     </main>
     <footer class="w-full  bg-[#030816] text-gray-50 pt-12 pb-4 font-body">
         <div class="container">
-            <div class="grid grid-cols-3 items-start gap-6 pb-6">
+            <div class="grid grid-flow-row md:grid-flow-col md:grid-cols-3 items-start gap-6 pb-6">
                 <div class="-mt-3 flex items-center font-normal">
                     <img src="/public/img/logo.png" alt="NIMELSSA LOGO" class="h-24" />
                     <p class="text-xs font-extralight">
@@ -106,7 +103,7 @@
                         <strong class="font-bold text-sm">UNIBADAN CHAPTER</strong>
                     </p>
                 </div>
-                <div class="text-xs space-y-3 invisible">
+                <div class="text-xs space-y-3">
                     <p>
                         Email: <a href="mailto:nimelssaui@gmail.com">nimelssaui@gmail.com</a>
                     </p>
@@ -122,7 +119,7 @@
                     <h3 class="font-medium mb-4 custom__underline_light">Quick Links</h3>
                     <ul class="text-xs space-y-2">
                         <li><a href="/">Staff</a></li>
-                        <li><a href="/">Executives</a></li>
+                        <li><a href="/#executives">Executives</a></li>
                         <li><a href="/">Opportunities</a></li>
                         <li><a href="/">Press</a></li>
                         <li><a href="/">Alumni</a></li>
@@ -137,6 +134,7 @@
     </footer>
     
 </body>
+<script src="/src/js/executives.js"></script>
 <script>
 AOS.init();
 </script>
