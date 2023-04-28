@@ -38,3 +38,21 @@ body {
 .carousel-cell{
     width: 100%;
 }
+
+#executive_carousel .c_container{
+    @apply container p-0 flex justify-around items-center h-[450px];
+}
+
+#executive_carousel .executive_img{
+    @apply h-full;
+}
+
+#executive_carousel .executive_details{
+    @apply  text-right space-y-2;
+}
+#executive_carousel .executive_details h3{
+    @apply font-heading text-4xl text-gray-950 whitespace-nowrap truncate;
+}
+#executive_carousel .executive_details h2{
+    @apply font-heading text-2xl font-medium text-gray-800;
+}

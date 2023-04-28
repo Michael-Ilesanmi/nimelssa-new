@@ -1,0 +1,29 @@
+{
+    "opportunities" :
+    [
+        {
+            "title": "MLS Intern at Wado General",
+            "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste tempora nulla exercitationem omnis repellat placeat ratione sunt reiciendis nobis ullam quam quia ea adipisci modi alias et, minus ad delectus expedita? Dolores alias eum deserunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. ",
+            "url": "htpps://",
+            "slug": "mls-intern-wado-general"
+        },
+        {
+            "title": "Research Assistant",
+            "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste tempora nulla exercitationem omnis repellat placeat ratione sunt reiciendis nobis ullam quam quia ea adipisci modi alias et, minus ad delectus expedita? Dolores alias eum deserunt.",
+            "url": "htpps://",
+            "slug": "research-assistant"
+        },
+        {
+            "title": "Scholarship Opportunities at Stanford",
+            "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste tempora nulla exercitationem omnis repellat placeat ratione sunt reiciendis nobis ullam quam quia ea adipisci modi alias et, minus ad delectus expedita? Dolores tempora nulla exercitationem omnis repellat placeat ratione sunt reiciendis alias eum deserunt tempora nulla exercitationem omnis repellat placeat ratione sunt reiciendis.",
+            "url": "htpps://",
+            "slug":"scholarship-opportunities-stanford"
+        },
+        {
+            "title": "IBRT Applications Now Open",
+            "summary": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste tempora nulla exercitationem omnis repellat placeat ratione sunt reiciendis tempora nulla exercitationem omnis repellat placeat ratione sunt reiciendis nobis ullam quam quia ea adipisci modi alias et, minus ad delectus expedita? Dolores alias eum deserunt.",
+            "url": "htpps://",
+            "slug": "ibrt-applications-now-open"
+        }
+    ]
+}

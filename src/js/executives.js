@@ -21,8 +21,22 @@ let executives = [
     }
 ];
 
-let carousel_container = document.querySelector("#executive_carousel");
+function displayExecutives() {
+    let carousel_container = document.querySelector("#executive_carousel");
+    executives.forEach(element => {
+        carousel_container.innerHTML += 
+            `<div class='carousel-cell'>
+                <div class='c_container'>
+                    <div class=''>
+                        <img src='${element?.image}' class='executive_img' alt='${element?.name}' />
+                    </div>
+                    <div class='executive_details'>
+                        <h3 class=''>${element?.name}</h3>
+                        <h2 class=''>${element?.position}</h2>
+                    </div>
+                </div>
+            </div>` 
+    });
+}
 
-executives.forEach(element => {
-    carousel_container.innerHTML += `<div class='carousel-cell'><div class='container flex justify-around'><div class='flex justify-center'><img src='${element?.image}' class='h-[200px]' alt='${element?.name}' /></div><div class='self-center text-right text-gray-100'><h3 class='font-heading text-2xl'>${element?.name}</h3><h2 class='font-heading text-lg font-medium text-gray-100'>${element?.position}</h2></div></div></div>` 
-});
+displayExecutives();

@@ -1,0 +1,24 @@
+{
+    "executives": [
+        {
+            "name": "Oluwatobi Peters",
+            "position": "President",
+            "image": "https://res.cloudinary.com/ioluwamichael/image/upload/v1682200320/nimelssa/exco_1_msw2eq.png"
+        },
+        {
+            "name": "Oluwatobi Peters",
+            "position": "Vice President",
+            "image": "https://res.cloudinary.com/ioluwamichael/image/upload/v1682200320/nimelssa/exco_1_msw2eq.png"
+        },
+        {
+            "name": "Oluwatobi Peters",
+            "position": "General Secretary",
+            "image": "https://res.cloudinary.com/ioluwamichael/image/upload/v1682200320/nimelssa/exco_1_msw2eq.png"
+        },
+        {
+            "name": "Oluwatobi Peters",
+            "position": "Financial Secretary",
+            "image": "https://res.cloudinary.com/ioluwamichael/image/upload/v1682200320/nimelssa/exco_1_msw2eq.png"
+        }
+    ]
+}
