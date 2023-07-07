@@ -21,7 +21,7 @@ function backgroundSequence() {
 		}, (secs * 1000) * i)	
 	}
 }
-backgroundSequence();
+// backgroundSequence();
 
 
 function toggleMobileMenu() {

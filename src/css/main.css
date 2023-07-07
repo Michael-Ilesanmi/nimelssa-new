@@ -36,7 +36,7 @@ body {
 
 .scrollNav{
  background-color: #FAFAFA;
- color: #A31D26;
+ color: #A31D26 !important;
  border-bottom: 2px solid #A31D26;
 }
 

@@ -17,12 +17,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="fixed top-0 left-0 right-0 z-[999] text-gray-100" id="navBar">
+    <div class="fixed top-0 left-0 right-0 z-[999] text-[#A31D26]" id="navBar">
         <nav class="container py-4 flex justify-between items-center">
             <a href="/" class="flex items-center">
                 <img src="/public/img/logo.png" alt="NIMELSSA LOGO" class="h-14" />
-                <span class="md:inline hidden font-medium">
-                    NIMELSSAUI
+                <span class="md:inline hidden font-medium text-gray-200">
+                    NIMELSSA UI
                 </span>
             </a>    
             <!-- NAV MENU -- MD && LG -->
@@ -31,7 +31,7 @@
                 <li><a class="hover:text-gray-300 hover:font-bold ease-linear duration-300" href="/#staff">STAFF</a></li>
                 <li><a class="hover:text-gray-300 hover:font-bold ease-linear duration-300" href="/#executives">EXCOS</a></li>
                 <li><a class="hover:text-gray-300 hover:font-bold ease-linear duration-300" href="/opportunities.html">OPPORTUNITIES</a></li>
-                <li><a class="hover:text-gray-300 hover:font-bold ease-linear duration-300" href="/opportunities">PRESS</a></li>
+                <li><a class="bg-[#A31D26] hover:outline-1 hover:outline hover:outline-[#A31D26] hover:bg-transparent hover:text-[#A31D26] transition ease-linear cursor-pointer px-8 py-2 rounded-full text-[#FAFAFA]" href="#ifa">IFÁ</a></li>
             </ul>
             <!-- NAV MENU -- MD && LG -->
             <!-- NAV MENU -- SM -->
@@ -51,18 +51,16 @@
         <!-- NAV MENU -- SM -->
     </div>
     <main>
-        <div class="bg-no-repeat bg-center bg-cover backdrop-blur-xl duration-[3000]" id="hero_section">
+        <div class="bg-no-repeat bg-[radial-gradient(circle_975px_at_2.6%_48.3%,rgba(0,8,120,0.6)0%,rgba(95,184,224,0.6)99.7%),url(https://res.cloudinary.com/ioluwamichael/image/upload/v1686013775/nimelssa/national-cancer-institute-lTlB51-XGP4-unsplash_j1ex8h.jpg)] bg-center bg-cover backdrop-blur-xl duration-[3000]" id="hero_section">
         <!-- Hero Section -->
-            <div class="container">
-                <div class="font-body pt-24 min-h-full h-full flex items-center justify-center">
-                    <div 
-                        class="h-full flex flex-col justify-center mx-auto space-y-4 md:w-3/5 text-center" 
-                        data-aos="fade-up"
-                        data-aos-duration="3000"
-                    >
-                        <h1 class="font-heading md:leading-loose font-medium text-2xl md:text-4xl text-gray-50">Welcome to the Nigerian Medical Laboratory Science Students' Association, University of Ibadan </h1>
-                        <!-- <p class="font-body font-light text-gray-100 text-xs md:text-sm w-3/4 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni maxime amet praesentium.</p> -->
+            <div class="backdrop-blur-sm">
+                <div class="font-body min-h-full h-full grid md:grid-cols-5 overflow-clip relative">
+                    <div class="py-24 hidden md:block container col-span-2"></div>
+                    <div style="clip-path: polygon(37% 0, 100% 0, 100% 100%, 39% 100%, 0 74%);" class="md:col-span-3 bg-[rgb(212,133,0)] bg-[linear-gradient(90deg,rgba(212,133,0,1)0%,rgba(218,140,5,1)35%,rgba(220,152,25,1)100%)] md:rotate-0 rotate-90">
+                        <div style="clip-path: polygon(31% 0, 100% 0, 100% 100%, 47% 100%, 0 74%);" class="bg-[rgb(254,189,73)] bg-[linear-gradient(90deg,rgba(254,189,73,1)0%,rgba(250,205,80,1)35%,rgba(249,216,85,1)100%)] h-full w-full" data-aos="zoom-in-left" data-aos-duration="500">
+                        </div>
                     </div>
+                    <h1 class="absolute pl-4 md:pl-0 w-full md:w-3/5 top-1/2 -translate-y-1/2 left-1/4 -translate-x-1/4 font-heading leading-[1.75] md:leading-loose font-medium text-4xl md:text-4xl text-gray-50" >Welcome to the Nigerian Medical Laboratory Science Students' Association, University of Ibadan </h1>
                 </div>
             </div>   
         <!--Hero Section End  -->
@@ -126,14 +124,14 @@
         </section>
         <!-- Opportunities Section -->
         <!-- IFA Section -->
-        <section class="bg-[url(https://res.cloudinary.com/ioluwamichael/image/upload/v1688765359/nimelssa/jaron-nix-7wWRXewYCH4-unsplash_d1kt5s.jpg)] bg-cover bg-center">
+        <section class="bg-[url(https://res.cloudinary.com/ioluwamichael/image/upload/v1688765359/nimelssa/jaron-nix-7wWRXewYCH4-unsplash_d1kt5s.jpg)] bg-cover bg-center" id="ifa">
             <div class="backdrop-blur-md py-24">
                 <div class="container">
                     <div class="md:w-2/3 mx-auto grid md:grid-cols-2 items-center justify-center md:space-x-6">
-                        <div class="">
+                        <div class="" data-aos="zoom-in-right" data-aos-duration="2000">
                             <img src="https://res.cloudinary.com/ioluwamichael/image/upload/v1688765988/nimelssa/266085052_491452042278864_7696631838286143858_n_caq7yp.jpg" alt="IFA Magazine" class="mx-auto h-80 md:h-96 md:-rotate-12" />
                         </div>
-                        <div class="text-xs font-body bg-white rounded-t-md border-b-4 border-[#A31D26] p-8 grow-0 space-y-6">
+                        <div class="text-xs font-body bg-white rounded-t-md border-b-4 border-[#A31D26] p-8 grow-0 space-y-6" data-aos="zoom-in-left" data-aos-duration="2000">
                             <h2 class="font-heading text-3xl font-bold">IFÁ</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, facere. Illum aut cum odit ex laboriosam in repellendus asperiores dignissimos ea, ipsa exercitationem ipsam quam.</p>
                             <ul class="ml-6 list-outside list-disc leading-relaxed">
