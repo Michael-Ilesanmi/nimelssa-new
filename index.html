@@ -14,14 +14,18 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="/public/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="bg-[#0f420a] border-b-2 border-gray-100 fixed top-0 left-0 right-0 z-[999]">
-        <nav class="container py-4 flex justify-between items-center text-gray-100">
+    <div class="fixed top-0 left-0 right-0 z-[999] text-gray-100">
+        <nav class="container py-4 flex justify-between items-center">
             <a href="/" class="flex items-center">
                 <img src="/public/img/logo.png" alt="NIMELSSA LOGO" class="h-12" />
-                NIMELSSA UI
+                <span class="md:inline hidden">
+                    NIMELSSA UI
+                </span>
             </a>    
+            <!-- NAV MENU -- MD && LG -->
             <ul class="hidden md:flex justify-around items-center space-x-12 text-sm font-body">
                 <li><a class="hover:text-gray-300 hover:font-bold ease-linear duration-300" href="/">HOME</a></li>
                 <li><a class="hover:text-gray-300 hover:font-bold ease-linear duration-300" href="/#staff">STAFF</a></li>
@@ -29,27 +33,35 @@
                 <li><a class="hover:text-gray-300 hover:font-bold ease-linear duration-300" href="/opportunities.html">OPPORTUNITIES</a></li>
                 <li><a class="hover:text-gray-300 hover:font-bold ease-linear duration-300" href="/opportunities">PRESS</a></li>
             </ul>
+            <!-- NAV MENU -- MD && LG -->
+            <!-- NAV MENU -- SM -->
+            <div class="block md:hidden">
+                <i onclick="toggleMobileMenu()" class="fa-solid fa-bars"></i>
+            </div>
+            <!-- NAV MENU -- SM -->
         </nav>
+        <!-- NAV MENU -- SM -->
+        <ul id="mobileNav" class="hidden w-full justify-around items-center px-6 h-screen space-y-8 text-sm font-body">
+            <li><a class="hover:text-gray-300 hover:font-bold ease-linear duration-300" href="/">HOME</a></li>
+            <li><a class="hover:text-gray-300 hover:font-bold ease-linear duration-300" href="/#staff">STAFF</a></li>
+            <li><a class="hover:text-gray-300 hover:font-bold ease-linear duration-300" href="/#executives">EXCOS</a></li>
+            <li><a class="hover:text-gray-300 hover:font-bold ease-linear duration-300" href="/opportunities.html">OPPORTUNITIES</a></li>
+            <li><a class="hover:text-gray-300 hover:font-bold ease-linear duration-300" href="/opportunities">PRESS</a></li>
+        </ul>
+        <!-- NAV MENU -- SM -->
     </div>
     <main>
-        <div class="bg-no-repeat bg-center bg-cover backdrop-blur-xl">
+        <div class="bg-no-repeat bg-center bg-cover backdrop-blur-xl duration-[3000]" id="hero_section">
         <!-- Hero Section -->
             <div class="container">
-                <div class="font-body pt-24 min-h-full h-full md:grid grid-cols-2 justify-around">
+                <div class="font-body pt-24 min-h-full h-full flex items-center justify-center">
                     <div 
-                        class="h-full flex flex-col justify-center mx-auto space-y-4" 
-                        data-aos="fade-right"
+                        class="h-full flex flex-col justify-center mx-auto space-y-4 md:w-3/5 text-center" 
+                        data-aos="fade-up"
                         data-aos-duration="3000"
                     >
-                        <h1 class="font-heading font-medium text-2xl md:text-3xl">Welcome to the Nigerian Medical Laboratory Science Students' Association, University of Ibadan Chapter (NIMELSSA UI)</h1>
-                        <p class="font-body font-light text-gray-400 text-sm md:text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni maxime amet praesentium.</p>
-                    </div>
-                    <div 
-                        class="hidden md:flex items-center justify-center" 
-                        data-aos="fade-left"
-                        data-aos-duration="3000"
-                    >
-                        <img src="/public/img/microscope.png" class="-rotate-12" alt="Image of a microscope" />
+                        <h1 class="font-heading md:leading-loose font-medium text-2xl md:text-4xl text-gray-50">Welcome to the Nigerian Medical Laboratory Science Students' Association, University of Ibadan </h1>
+                        <!-- <p class="font-body font-light text-gray-100 text-xs md:text-sm w-3/4 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni maxime amet praesentium.</p> -->
                     </div>
                 </div>
             </div>   
@@ -80,10 +92,10 @@
         <!-- Meet The Executives -->
         <div class="">
             <div id="executives">
-                <h2 class="font-heading text-2xl md:text-3xl text-center text-blue-950 mt-24">Meet The Executives</h2>
+                <h2 class="font-heading text-2xl md:text-3xl text-center text-blue-950 my-24">Meet The Executives</h2>
             </div>
             <!-- Flickity HTML init -->
-            <div class="bg-blue-400 mb-12 w-full">
+            <div class="mb-12 w-full">
                 <div 
                     id="executive_carousel" 
                     class="main-carousel" 
@@ -96,7 +108,7 @@
         </div>
         <!-- Meet the executives -->
         <!-- Opportunities Section -->
-        <section id="opportunities_section">
+        <section id="opportunities_section" class="hidden">
             <div class="container my-24 font-body grid gap-12 grid-flow-col">
                 <div class="">
                     <img src="https://picsum.photos/250" alt="" class="" />
@@ -114,31 +126,17 @@
         </section>
         <!-- Opportunities Section -->
     </main>
-    <footer class="w-full  bg-[#030816] text-gray-50 pt-12 pb-4 font-body">
-        <div class="container">
-            <div class="grid grid-flow-row md:grid-flow-col md:grid-cols-3 items-start gap-6 pb-6">
-                <div class="-mt-3 flex items-center font-normal">
-                    <img src="/public/img/logo.png" alt="NIMELSSA LOGO" class="h-24" />
-                    <p class="text-xs font-extralight">
-                        NIGERIAN MEDICAL LABORATORY SCIENCE STUDENTS ASSOCIATION <br> 
-                        <strong class="font-bold text-sm">UNIBADAN CHAPTER</strong>
+    <footer class="w-full p-0 bg-[#222222] text-gray-50 font-body">
+            <div class="container pt-24 pb-12 grid grid-flow-row md:grid-flow-col auto-cols-fr gap-y-12 md:place-items-center items-start font-light">
+                <div class="flex flex-col font-normal">
+                    <p class="mb-6 text-base text-[#FBFBFB]">
+                        NIMELSSA UI
                     </p>
-                </div>
-                <div class="text-xs space-y-3">
-                    <p>
-                        Email: <a href="mailto:nimelssaui@gmail.com">nimelssaui@gmail.com</a>
-                    </p>
-                    <p>
-                        Telephone: <a href="tel:+2348100105264">+2348100105264</a>
-                    </p>
-                    <p>
-                        Address: FIRST FLOOR, BIO-MEDICAL BUILDING, <br>
-                        UNIVERSITY COLLEGE HOSPITAL, IBADAN 
-                    </p>
+                    <p class="text-[#8B8B8B] text-xs font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptatem aliquam quia minima incidunt iusto nulla quo vel porro voluptatum veritatis in iste quidem voluptates error atque, eius consectetur hic necessitatibus libero officiis eaque doloremque. Facilis accusantium nesciunt quae nulla eius quis reprehenderit consectetur! Laudantium?</p>
                 </div>
                 <nav>
-                    <h3 class="font-medium mb-4 custom__underline_light">Quick Links</h3>
-                    <ul class="text-xs space-y-2">
+                    <h3 class="mb-6 uppercase text-sm custom__underline_light text-[#FBFBFB]">Quick Links</h3>
+                    <ul class="text-xs space-y-3 text-[#8B8B8B] font-light">
                         <li><a href="/">Staff</a></li>
                         <li><a href="/#executives">Executives</a></li>
                         <li><a href="/">Opportunities</a></li>
@@ -147,16 +145,52 @@
                         <li><a href="/">IFA</a></li>
                     </ul>
                 </nav>
+                <div class="">
+                    <h3 class="mb-6 uppercase text-sm custom__underline_light text-[#FBFBFB]">Contact Us</h3>
+                    <div class="text-xs space-y-3 text-[#8B8B8B] font-light">
+                        <div class="flex items-start justify-start space-x-3">
+                            <i class="fa-solid fa-location-dot text-[#FBFBFB]"></i> 
+                            <span>
+                                1st Floor, Bio-Medical Building,
+                                University College Hospital, Ibadan. 
+                            </span>
+                        </div>
+                        <div class="flex items-start justify-start space-x-3">
+                            <i class="fa-solid fa-mobile-screen text-[#FBFBFB]"></i> 
+                            <a href="tel:+2348100105264">+2348100105264</a>
+                        </div>
+                        <div class="flex items-start justify-start space-x-3">
+                            <i class="fa-solid fa-envelope text-[#FBFBFB]"></i>
+                            <a href="mailto:nimelssaui@gmail.com">nimelssaui@gmail.com</a>
+                        </div>                        
+                    </div>
+                </div> 
+                <nav>
+                    <h3 class="mb-6 uppercase text-sm custom__underline_light text-[#FBFBFB]">Other Links</h3>
+                    <ul class="text-2xl flex space-x-3 text-[#FBFBFB]">
+                        <a href="/"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="/"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="/"><i class="fa-brands fa-square-facebook"></i></a>
+                    </ul>
+                </nav>
             </div>
-            <p class="text-center text-xs w-full mx-auto border-t border-gray-400 pt-6 px-12 mt-6 ">
-                Copyright © NIMELSSAUI. All rights Reserved | Powered by <a class="text-blue-300" href="mailto:ioluwamichael@gmail.com">@__localdev</a>
-            </p>
-        </div>
+            <div class="bg-[#181617] py-4">
+                <div class="container flex justify-start space-x-4 items-center">
+                    <p class="text-center text-xs">
+                        Copyright © NIMELSSAUI. All rights Reserved
+                    </p>
+                    <p class="text-center text-xs">
+                        Powered by <a class="text-blue-300" href="mailto:ioluwamichael@gmail.com">@__localdev</a>
+                    </p>
+                </div>
+            </div>
     </footer>
     
 </body>
 <script src="/src/js/executives.js"></script>
 <script src="/src/js/opportunities.js"></script>
+<script src="/src/js/index.js"></script>
 <script>
 AOS.init();
 showLatestOpportunities();

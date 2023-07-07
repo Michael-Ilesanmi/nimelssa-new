@@ -22,7 +22,7 @@ body {
     bottom: -5px;
     width: 45%;
     height: 3px;
-    background: #090C14;
+    background: #A31D26;
 }
 .custom__underline_light::after {
     position: absolute;
@@ -30,8 +30,8 @@ body {
     left: 0;
     bottom: -5px;
     width: 45%;
-    height: 3px;
-    background: #e5e5e5;
+    height: 2px;
+    background: #A31D26;
 }
 
 
@@ -40,11 +40,14 @@ body {
 }
 
 #executive_carousel .c_container{
-    @apply container p-0 flex justify-around items-center h-[450px];
+    @apply container p-0 flex md:flex-row flex-col justify-around items-center;
 }
 
+#executive_carousel .c_container > div:has(img){
+    @apply h-3/5 md:h-full rounded-full bg-gray-200 aspect-square flex items-center justify-center overflow-clip;
+}
 #executive_carousel .executive_img{
-    @apply h-full;
+    @apply scale-75 md:h-full;
 }
 
 #executive_carousel .executive_details{
@@ -56,3 +59,48 @@ body {
 #executive_carousel .executive_details h2{
     @apply font-heading text-2xl font-medium text-gray-800;
 }
+
+  @-webkit-keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @-moz-keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @-o-keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
