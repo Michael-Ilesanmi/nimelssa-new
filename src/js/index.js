@@ -28,3 +28,14 @@ function toggleMobileMenu() {
     let nav = document.querySelector("#mobileNav");
     nav.style.display = nav.style.display == "none" ? "block" : "none";    
 }
+
+window.onscroll = function() {scrollNavBar()};
+
+function scrollNavBar() {
+    const nav = document.querySelector("#navBar")
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        nav.classList.add("scrollNav") 
+    } else {
+        nav.classList.remove("scrollNav") 
+    }
+}

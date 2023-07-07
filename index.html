@@ -17,16 +17,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="fixed top-0 left-0 right-0 z-[999] text-gray-100">
+    <div class="fixed top-0 left-0 right-0 z-[999] text-gray-100" id="navBar">
         <nav class="container py-4 flex justify-between items-center">
             <a href="/" class="flex items-center">
-                <img src="/public/img/logo.png" alt="NIMELSSA LOGO" class="h-12" />
-                <span class="md:inline hidden">
-                    NIMELSSA UI
+                <img src="/public/img/logo.png" alt="NIMELSSA LOGO" class="h-14" />
+                <span class="md:inline hidden font-medium">
+                    NIMELSSAUI
                 </span>
             </a>    
             <!-- NAV MENU -- MD && LG -->
-            <ul class="hidden md:flex justify-around items-center space-x-12 text-sm font-body">
+            <ul class="hidden md:flex justify-around items-center space-x-12 text-sm font-body font-medium">
                 <li><a class="hover:text-gray-300 hover:font-bold ease-linear duration-300" href="/">HOME</a></li>
                 <li><a class="hover:text-gray-300 hover:font-bold ease-linear duration-300" href="/#staff">STAFF</a></li>
                 <li><a class="hover:text-gray-300 hover:font-bold ease-linear duration-300" href="/#executives">EXCOS</a></li>
@@ -90,7 +90,7 @@
         </div>
         <!-- Learn About US  -->
         <!-- Meet The Executives -->
-        <div class="">
+        <div class="hidden">
             <div id="executives">
                 <h2 class="font-heading text-2xl md:text-3xl text-center text-blue-950 my-24">Meet The Executives</h2>
             </div>
@@ -127,7 +127,7 @@
         <!-- Opportunities Section -->
         <!-- IFA Section -->
         <section class="bg-[url(https://res.cloudinary.com/ioluwamichael/image/upload/v1688765359/nimelssa/jaron-nix-7wWRXewYCH4-unsplash_d1kt5s.jpg)] bg-cover bg-center">
-            <div class="backdrop-blur-lg py-24">
+            <div class="backdrop-blur-md py-24">
                 <div class="container">
                     <div class="md:w-2/3 mx-auto grid md:grid-cols-2 items-center justify-center md:space-x-6">
                         <div class="">

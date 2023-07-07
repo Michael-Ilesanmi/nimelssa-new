@@ -34,6 +34,11 @@ body {
     background: #A31D26;
 }
 
+.scrollNav{
+ background-color: #FAFAFA;
+ color: #A31D26;
+ border-bottom: 2px solid #A31D26;
+}
 
 .carousel-cell{
     width: 100%;
