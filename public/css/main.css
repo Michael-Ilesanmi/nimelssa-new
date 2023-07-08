@@ -612,10 +612,6 @@ video {
   grid-column: span 2 / span 2;
 }
 
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -624,6 +620,11 @@ video {
 .my-24 {
   margin-top: 6rem;
   margin-bottom: 6rem;
+}
+
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .-mt-3 {
@@ -666,6 +667,10 @@ video {
   display: none;
 }
 
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
 .h-12 {
   height: 3rem;
 }
@@ -690,12 +695,12 @@ video {
   height: 100vh;
 }
 
-.min-h-full {
-  min-height: 100%;
+.h-72 {
+  height: 18rem;
 }
 
-.w-3\/5 {
-  width: 60%;
+.min-h-full {
+  min-height: 100%;
 }
 
 .w-fit {
@@ -718,11 +723,6 @@ video {
 
 .-translate-y-1\/2 {
   --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.rotate-45 {
-  --tw-rotate: 45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -763,12 +763,12 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
 .flex-col {
   flex-direction: column;
+}
+
+.place-items-center {
+  place-items: center;
 }
 
 .items-start {
@@ -777,6 +777,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.items-stretch {
+  align-items: stretch;
 }
 
 .justify-start {
@@ -888,6 +892,10 @@ video {
   border-top-width: 1px;
 }
 
+.border-b-8 {
+  border-bottom-width: 8px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -910,6 +918,16 @@ video {
 .border-gray-400 {
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
+.border-\[\#ababab\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(171 171 171 / var(--tw-border-opacity));
+}
+
+.border-slate-950 {
+  --tw-border-opacity: 1;
+  border-color: rgb(2 6 23 / var(--tw-border-opacity));
 }
 
 .bg-\[\#030816\] {
@@ -952,6 +970,21 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#fafafa\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+}
+
+.bg-slate-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 6 23 / var(--tw-bg-opacity));
+}
+
 .bg-\[linear-gradient\(90deg\2c rgba\(212\2c 133\2c 0\2c 1\)0\%\2c rgba\(218\2c 140\2c 5\2c 1\)35\%\2c rgba\(220\2c 152\2c 25\2c 1\)100\%\)\] {
   background-image: linear-gradient(90deg,rgba(212,133,0,1)0%,rgba(218,140,5,1)35%,rgba(220,152,25,1)100%);
 }
@@ -960,16 +993,12 @@ video {
   background-image: linear-gradient(90deg,rgba(254,189,73,1)0%,rgba(250,205,80,1)35%,rgba(249,216,85,1)100%);
 }
 
-.bg-\[url\(https\:\/\/res\.cloudinary\.com\/ioluwamichael\/image\/upload\/v1688765359\/nimelssa\/jaron-nix-7wWRXewYCH4-unsplash_d1kt5s\.jpg\)\] {
-  background-image: url(https://res.cloudinary.com/ioluwamichael/image/upload/v1688765359/nimelssa/jaron-nix-7wWRXewYCH4-unsplash_d1kt5s.jpg);
-}
-
-.bg-\[url\(https\:\/\/res\.cloudinary\.com\/ioluwamichael\/image\/upload\/v1686013775\/nimelssa\/national-cancer-institute-lTlB51-XGP4-unsplash_j1ex8h\.jpg\)\] {
-  background-image: url(https://res.cloudinary.com/ioluwamichael/image/upload/v1686013775/nimelssa/national-cancer-institute-lTlB51-XGP4-unsplash_j1ex8h.jpg);
-}
-
 .bg-\[radial-gradient\(circle_975px_at_2\.6\%_48\.3\%\2c rgba\(0\2c 8\2c 120\2c 0\.6\)0\%\2c rgba\(95\2c 184\2c 224\2c 0\.6\)99\.7\%\)\2c url\(https\:\/\/res\.cloudinary\.com\/ioluwamichael\/image\/upload\/v1686013775\/nimelssa\/national-cancer-institute-lTlB51-XGP4-unsplash_j1ex8h\.jpg\)\] {
   background-image: radial-gradient(circle 975px at 2.6% 48.3%,rgba(0,8,120,0.6)0%,rgba(95,184,224,0.6)99.7%),url(https://res.cloudinary.com/ioluwamichael/image/upload/v1686013775/nimelssa/national-cancer-institute-lTlB51-XGP4-unsplash_j1ex8h.jpg);
+}
+
+.bg-\[url\(https\:\/\/res\.cloudinary\.com\/ioluwamichael\/image\/upload\/v1688765359\/nimelssa\/jaron-nix-7wWRXewYCH4-unsplash_d1kt5s\.jpg\)\] {
+  background-image: url(https://res.cloudinary.com/ioluwamichael/image/upload/v1688765359/nimelssa/jaron-nix-7wWRXewYCH4-unsplash_d1kt5s.jpg);
 }
 
 .bg-cover {
@@ -982,6 +1011,21 @@ video {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .p-0 {
@@ -1031,6 +1075,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -1043,6 +1092,10 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.pl-4 {
+  padding-left: 1rem;
+}
+
 .pt-12 {
   padding-top: 3rem;
 }
@@ -1053,10 +1106,6 @@ video {
 
 .pt-6 {
   padding-top: 1.5rem;
-}
-
-.pl-4 {
-  padding-left: 1rem;
 }
 
 .text-center {
@@ -1134,16 +1183,12 @@ video {
   text-transform: uppercase;
 }
 
-.leading-relaxed {
-  line-height: 1.625;
-}
-
-.leading-loose {
-  line-height: 2;
-}
-
 .leading-\[1\.75\] {
   line-height: 1.75;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
 }
 
 .text-\[\#0f420a\] {
@@ -1201,14 +1246,13 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.backdrop-blur-md {
-  --tw-backdrop-blur: blur(12px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+.text-\[\#ABABAB\] {
+  --tw-text-opacity: 1;
+  color: rgb(171 171 171 / var(--tw-text-opacity));
 }
 
-.backdrop-blur-xl {
-  --tw-backdrop-blur: blur(24px);
+.backdrop-blur-md {
+  --tw-backdrop-blur: blur(12px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
@@ -1219,8 +1263,8 @@ video {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-.backdrop-blur {
-  --tw-backdrop-blur: blur(8px);
+.backdrop-blur-xl {
+  --tw-backdrop-blur: blur(24px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
@@ -1527,8 +1571,20 @@ body {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
+  .md\:place-items-center {
+    place-items: center;
+  }
+
+  .md\:items-stretch {
+    align-items: stretch;
+  }
+
   .md\:justify-items-center {
     justify-items: center;
+  }
+
+  .md\:gap-12 {
+    gap: 3rem;
   }
 
   .md\:gap-y-0 {
