@@ -25,8 +25,23 @@ function backgroundSequence() {
 
 
 function toggleMobileMenu() {
-    let nav = document.querySelector("#mobileNav");
-    nav.style.display = nav.style.display == "none" ? "block" : "none";    
+    let mobileNav = document.querySelector("#mobileNav");
+    let navBar = document.querySelector("#navBar");
+    if (mobileNav.style.display == "block") {
+        // 
+        mobileNav.style.display = "none";  
+        navBar.style.backdropFilter = "none";  
+        navBar.style.background = "none";  
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            navBar.classList.add("scrollNav") 
+        } else {
+            navBar.classList.remove("scrollNav") 
+        }
+    } else {
+        mobileNav.style.display = "block";  
+        navBar.style.background = 'rgba(255, 255, 255, 0.59)';  
+        navBar.style.backdropFilter = 'blur(8px)';  
+    }
 }
 
 window.onscroll = function() {scrollNavBar()};

@@ -1,38 +1,43 @@
 let executives = [
     {
-        name: "Oluwatobi Peters",
-        position: "President",
+        name: "Dr. I.O. Omotosho",
+        position: "Head of Department",
         image: "https://res.cloudinary.com/ioluwamichael/image/upload/v1682200320/nimelssa/exco_1_msw2eq.png"
     },
     {
-        name: "Alexa Jane",
-        position: "Vice President",
+        name: "Dr. Folarin",
+        position: "Examination Coordinator",
         image: "https://res.cloudinary.com/ioluwamichael/image/upload/v1682200320/nimelssa/exco_1_msw2eq.png"
     },
     {
-        name: "Grant Edwards",
-        position: "General Secretary",
+        name: "Dr. Bamishaye",
+        position: "Lecturer",
         image: "https://res.cloudinary.com/ioluwamichael/image/upload/v1682200320/nimelssa/exco_1_msw2eq.png"
     },
     {
-        name: "Ajayi Oluwasanmi",
-        position: "Financial Secretary",
+        name: "Dr. Ajileye",
+        position: "Lecturer",
         image: "https://res.cloudinary.com/ioluwamichael/image/upload/v1682200320/nimelssa/exco_1_msw2eq.png"
     },
     {
-        name: "Chuck Raymond",
-        position: "Treasurer",
+        name: "Dr. Kenneth Onyegbula",
+        position: "Lecturer",
         image: "https://res.cloudinary.com/ioluwamichael/image/upload/v1682200320/nimelssa/exco_1_msw2eq.png"
     },
     {
-        name: "Francisca Lemonade",
-        position: "Special Duty Officer",
+        name: "Mrs. Faulkner",
+        position: "Secretary",
+        image: "https://res.cloudinary.com/ioluwamichael/image/upload/v1682200320/nimelssa/exco_1_msw2eq.png"
+    },
+    {
+        name: "Mr. Odeleye",
+        position: "Admin",
         image: "https://res.cloudinary.com/ioluwamichael/image/upload/v1682200320/nimelssa/exco_1_msw2eq.png"
     }
 ];
 
-function displayExecutives() {
-    let carousel_container = document.querySelector("#executives_container");
+function displayStaff() {
+    let carousel_container = document.querySelector("#staff_container");
     executives.forEach(element => {
         carousel_container.innerHTML += 
             `
@@ -49,4 +54,4 @@ function displayExecutives() {
     });
 }
 
-window.addEventListener('load', displayExecutives())
+window.addEventListener('load', displayStaff())
