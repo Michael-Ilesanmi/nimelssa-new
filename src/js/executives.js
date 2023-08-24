@@ -37,7 +37,7 @@ function displayExecutives() {
         carousel_container.innerHTML += 
             `
             <div class="border-b-8 border-slate-950 pb-4 w-full" >
-                <div class="bg-slate-950">
+                <div class="bg-slate-950 mb-4">
                     <img src="${element?.image}" alt="${element?.name}" class="h-56 md:h-72 mx-auto backdrop-blur-md" />
                 </div>
                 <div class="font-body w-full pt-4 px-3 space-y-2 text-right">

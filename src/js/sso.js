@@ -1712,8 +1712,7 @@ let galleryImgs = {
     ]
 }
 
-
-let container = document.querySelector('#imageGallery')
+let container = document.querySelector('#sso_gallery')
 
 function showGallery() {
     galleryImgs?.resources.forEach(element => {

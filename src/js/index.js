@@ -43,7 +43,7 @@ function insertNavBar() {
             <!-- NAV MENU -- MD && LG -->
             <ul class="hidden md:flex justify-around items-center space-x-12 text-sm font-body font-medium">
                 <li><a class="hover:text-[#090909] transition hover:font-bold ease-linear duration-300" href="/">HOME</a></li>
-                <li><a class="hover:text-[#090909] transition hover:font-bold ease-linear duration-300" href="/staff.html">STAFF</a></li>
+                <li><a class="hover:text-[#090909] transition hover:font-bold ease-linear duration-300" href="/about.html">ABOUT US</a></li>
                 <li><a class="hover:text-[#090909] transition hover:font-bold ease-linear duration-300" href="/executives.html">EXCOS</a></li>
                 <li><a class="hover:text-[#090909] transition hover:font-bold ease-linear duration-300" href="/gallery.html">GALLERY</a></li>
                 <li><a class="bg-[#A31D26] hover:outline-1 hover:outline hover:outline-[#A31D26] hover:bg-transparent hover:text-[#A31D26] transition ease-linear cursor-pointer px-8 py-2 rounded-full text-[#FAFAFA]" href="/#ifa">IFÁ</a></li>
@@ -76,11 +76,12 @@ function insertFooter() {
                 <p class="mb-6 text-base text-[#FBFBFB]">
                     NIMELSSA UI
                 </p>
-                <p class="text-[#8B8B8B] text-xs font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptatem aliquam quia minima incidunt iusto nulla quo vel porro voluptatum veritatis in iste quidem voluptates error atque, eius consectetur hic necessitatibus libero officiis eaque doloremque. Facilis accusantium nesciunt quae nulla eius quis reprehenderit consectetur! Laudantium?</p>
+                <p class="text-[#8B8B8B] leading-relaxed text-xs font-light">The Nigerian Medical Laboratory Science Students' Association, University of Ibadan (NIMELSSA UI) established in 2015 is the representative body for all medical laboratory science students in the prestigious College of Medicine, University of Ibadan.</p>
             </div>
             <nav>
                 <h3 class="mb-6 uppercase text-sm custom__underline_light text-[#FBFBFB]">Quick Links</h3>
                 <ul class="text-xs space-y-3 text-[#8B8B8B] font-light">
+                    <li><a href="/about.html">About Us</a></li>
                     <li><a href="/staff.html">Staff</a></li>
                     <li><a href="/executives.html">Executives</a></li>
                     <li><a href="https://biomedicaltimesui.blogspot.com/" target="_blank">Press</a></li>
