@@ -2,37 +2,27 @@ let executives = [
     {
         name: "Dr. I.O. Omotosho",
         position: "Head of Department",
-        image: "https://res.cloudinary.com/ioluwamichael/image/upload/v1682200320/nimelssa/exco_1_msw2eq.png"
+        image: "https://res.cloudinary.com/ioluwamichael/image/upload/v1693056543/nimelssa/staff/tosho-removebg-preview_buuc0j.png"
     },
     {
-        name: "Dr. Folarin",
-        position: "Examination Coordinator",
-        image: "https://res.cloudinary.com/ioluwamichael/image/upload/v1682200320/nimelssa/exco_1_msw2eq.png"
+        name: "Dr. O.R. Folarin",
+        position: "Examination Co-ordinator",
+        image: "https://res.cloudinary.com/ioluwamichael/image/upload/v1693056390/nimelssa/staff/exam-coord_co4urw-removebg-preview_hksfub.png"
     },
     {
-        name: "Dr. Bamishaye",
-        position: "Lecturer",
-        image: "https://res.cloudinary.com/ioluwamichael/image/upload/v1682200320/nimelssa/exco_1_msw2eq.png"
+        name: "Dr. E.O Bamishaye",
+        position: "Staff Advisor",
+        image: "https://res.cloudinary.com/ioluwamichael/image/upload/v1693056390/nimelssa/staff/advisor_lo9nvh-removebg-preview_a1fefu.png"
     },
     {
         name: "Dr. Ajileye",
         position: "Lecturer",
-        image: "https://res.cloudinary.com/ioluwamichael/image/upload/v1682200320/nimelssa/exco_1_msw2eq.png"
+        image: "https://res.cloudinary.com/ioluwamichael/image/upload/v1693056390/nimelssa/staff/staff-2_qc943g-removebg-preview_ips3lq.png"
     },
     {
         name: "Dr. Kenneth Onyegbula",
         position: "Lecturer",
-        image: "https://res.cloudinary.com/ioluwamichael/image/upload/v1682200320/nimelssa/exco_1_msw2eq.png"
-    },
-    {
-        name: "Mrs. Faulkner",
-        position: "Secretary",
-        image: "https://res.cloudinary.com/ioluwamichael/image/upload/v1682200320/nimelssa/exco_1_msw2eq.png"
-    },
-    {
-        name: "Mr. Odeleye",
-        position: "Admin",
-        image: "https://res.cloudinary.com/ioluwamichael/image/upload/v1682200320/nimelssa/exco_1_msw2eq.png"
+        image: "https://res.cloudinary.com/ioluwamichael/image/upload/v1693056389/nimelssa/staff/staff-3_p2wdtk-removebg-preview_iq47qd.png"
     }
 ];
 
