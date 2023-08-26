@@ -99,7 +99,7 @@ function insertFooter() {
                             University College Hospital, Ibadan. 
                         </span>
                     </div>
-                    <div class="flex items-start justify-start space-x-3">
+                    <div class="hidden items-start justify-start space-x-3">
                         <i class="fa-solid fa-mobile-screen text-[#FBFBFB]"></i> 
                         <a href="tel:+2348100105264">+2348100105264</a>
                     </div>
