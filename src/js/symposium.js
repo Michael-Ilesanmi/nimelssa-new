@@ -1720,20 +1720,6 @@ function showGallery() {
                     </div>
                 </div>
             `
-        } else {
-            console.log(heic2any)
-            // fetching the heic image
-            fetch(element?.secure_url)
-            .then((res) => res.blob())
-            .then((blob) => {
-                heic2any({ blob })
-            })
-            .then((conversionResult) => {
-                console.log(conversionResult)
-            })
-            .catch((e) => {
-                console.error(e);
-            });
         }
     })
 }
