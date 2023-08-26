@@ -21,7 +21,7 @@ let executives = [
      },
     {name: "Idayat Lawal", 
          position: "Assistant General Secretary", 
-         image: "https://res.cloudinary.com/ioluwamichael/image/upload/v1693080905/nimelssa/excos/IMG-20211031-WA0079-removebg-preview_mq6mvw.png" 
+         image: "https://res.cloudinary.com/ioluwamichael/image/upload/v1693080905/nimelssa/excos/IMG-20230826-WA0049-removebg-preview_xcquht.png" 
      },
    { name: "Ojo Oluwaferanmi", 
          position: "Welfare Director", 
