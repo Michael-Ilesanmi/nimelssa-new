@@ -2,8 +2,7 @@
   "name": "nimellsa",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "npx tailwindcss -i ./src/css/main.css -o ./public/css/main.css"
   },
   "private": true,
   "keywords": [],
