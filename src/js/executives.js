@@ -40,11 +40,15 @@ let executives = [
 function displayExecutives() {
     let carousel_container = document.querySelector("#executives_container");
     executives.forEach(element => {
+        let oldURL =  element?.image;
+        let matchString  = "image/upload/";
+        let i = oldURL.indexOf(matchString);
+        let newURL = oldURL.substr(0, i+matchString.length) + "w_0.5,c_scale/" + oldURL.substr(i+matchString.length);
         carousel_container.innerHTML += 
             `
             <div class="border-b-8 border-slate-950 pb-4 w-full" >
                 <div class="bg-slate-950 mb-4">
-                    <img src="${element?.image}" alt="${element?.name}" class="h-56 md:h-64 mx-auto backdrop-blur-md" />
+                    <img src="${newURL ?? oldURL}" alt="${element?.name}" class="h-56 md:h-64 mx-auto backdrop-blur-md" />
                 </div>
                 <div class="font-body w-full pt-4 px-3 space-y-2 text-right">
                     <h4 class="text-base font-semibold">${element?.name}</h4>

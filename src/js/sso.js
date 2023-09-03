@@ -1,3 +1,5 @@
+let counter = 15;
+
 let galleryImgs = {
     "total_count": 197,
     "time": 7096,
@@ -1715,17 +1717,29 @@ let galleryImgs = {
 let container = document.querySelector('#sso_gallery')
 
 function showGallery() {
-    galleryImgs?.resources.forEach(element => {
-        if (element?.format == 'jpg' || element?.format == 'jpeg' || element?.format == 'png') {
+    container.innerHTML = "";
+    galleryImgs?.resources.forEach((element, index) => {
+        if ((element?.format == 'jpg' || element?.format == 'jpeg' || element?.format == 'png') && index < counter) {
+            let oldURL =  element?.secure_url;
+            let matchString  = "image/upload/";
+            let i = oldURL.indexOf(matchString);
+            let newURL = oldURL.substr(0, i+matchString.length) + "w_0.1,c_scale/" + oldURL.substr(i+matchString.length);
             container.innerHTML += `
                 <div class="border-b-8 border-slate-950 pb-4 w-full" >
                     <div class="bg-slate-950 h-72">
-                        <img src="${element?.secure_url}" alt="" class="_images h-full mx-auto backdrop-blur-md w-full" loading="lazy" style="object-fit:contain" />
+                        <img src="${newURL ?? oldURL}" alt="" class="_images h-full mx-auto backdrop-blur-md w-full" loading="lazy" style="object-fit:contain" />
                     </div>
                 </div>
             `
         }
     })
+    if (counter < galleryImgs?.resources?.length) {
+        container.innerHTML += `
+            <button class="pb-4 w-full block absolute bottom-[-40px] text-slate-900" onclick='counter+=10, showGallery()'>
+            Load More...
+            </button>
+        `
+    }
 }
 
 window.addEventListener('load', showGallery())

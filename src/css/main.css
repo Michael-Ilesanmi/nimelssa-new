@@ -42,9 +42,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .scrollNav{
- background-color: #FAFAFA;
- color: #A31D26 !important;
- border-bottom: 2px solid #A31D26;
+ @apply bg-[#FAFAFA] text-[#A31D26] border-b-2 border-[#A31D26];
 }
 .scrollNav #logo_title{
   @apply text-[#090909]

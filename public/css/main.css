@@ -604,12 +604,44 @@ video {
   top: 50%;
 }
 
+.bottom-0{
+  bottom: 0px;
+}
+
+.bottom-\[20px\]{
+  bottom: 20px;
+}
+
+.bottom-\[-20px\]{
+  bottom: -20px;
+}
+
+.bottom-\[60px\]{
+  bottom: 60px;
+}
+
+.bottom-\[-60px\]{
+  bottom: -60px;
+}
+
+.bottom-\[-40px\]{
+  bottom: -40px;
+}
+
 .z-\[999\]{
   z-index: 999;
 }
 
 .col-span-2{
   grid-column: span 2 / span 2;
+}
+
+.float-right{
+  float: right;
+}
+
+.float-left{
+  float: left;
 }
 
 .mx-auto{
@@ -1002,6 +1034,14 @@ video {
   padding-top: 1.5rem;
 }
 
+.pb-24{
+  padding-bottom: 6rem;
+}
+
+.text-left{
+  text-align: left;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1147,6 +1187,16 @@ video {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-slate-900{
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
 .underline{
   text-decoration-line: underline;
 }
@@ -1236,9 +1286,13 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .scrollNav{
-  background-color: #FAFAFA;
-  color: #A31D26 !important;
-  border-bottom: 2px solid #A31D26;
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(163 29 38 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(163 29 38 / var(--tw-text-opacity));
 }
 
 .scrollNav #logo_title{

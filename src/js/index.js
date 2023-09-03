@@ -3,19 +3,18 @@ function toggleMobileMenu() {
     let mobileNav = document.querySelector("#mobileNav");
     let navBar = document.querySelector("#navBar");
     if (mobileNav.style.display == "block") {
-        // 
         mobileNav.style.display = "none";  
-        navBar.style.backdropFilter = "none";  
-        navBar.style.background = "none";  
         if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-            navBar.classList.add("scrollNav") 
+            navBar.style.background = "#FAFAFA";  
+            scrollNavBar();
         } else {
+            navBar.style.backdropFilter = "none";  
+            navBar.style.background = "unset";  
             navBar.classList.remove("scrollNav") 
         }
     } else {
         mobileNav.style.display = "block";  
-        navBar.style.background = 'rgba(255, 255, 255, 0.59)';  
-        navBar.style.backdropFilter = 'blur(8px)';  
+        navBar.style.background = '#FAFAFA';  
     }
 }
 
@@ -23,9 +22,11 @@ function toggleMobileMenu() {
 function scrollNavBar() {
     const nav = document.querySelector("#navBar")
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        nav.style.background = "#FAFAFA"; 
         nav.classList.add("scrollNav") 
     } else {
         nav.classList.remove("scrollNav") 
+        nav.style.background = "none"; 
     }
 }
 
@@ -120,7 +121,7 @@ function insertFooter() {
         </div>
         <div class="bg-[#181617] py-4">
             <div class="container flex justify-start space-x-4 items-center">
-                <p class="text-center text-xs">
+                <p class="text-left text-xs">
                     Copyright © NIMELSSAUI. All rights Reserved
                 </p>
                 <p class="text-center text-xs">
